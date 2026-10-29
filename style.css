@@ -1,0 +1,35 @@
+/* Cùng bảng màu và font với app Sổ Hoa Hồng và web Thuế Làm Online. */
+:root {
+  --bg: #f6f7f4; --surface: #ffffff; --surface-2: #eef2ec; --line: #dfe5dd;
+  --ink: #10201a; --ink-2: #4b5b54; --ink-3: #7c8a83;
+  --brand: #0f6b4f; --on-brand: #ffffff; --brand-soft: #e3f2ea; --on-brand-soft: #0b3d2d;
+  --warn: #b45309; --warn-soft: #fff6e5;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1512; --surface: #14201b; --surface-2: #1a2a23; --line: #24352d;
+    --ink: #e9f1ec; --ink-2: #a9bab2; --ink-3: #7f9189;
+    --brand: #3fc191; --on-brand: #00382a; --brand-soft: #173328; --on-brand-soft: #bdebd8;
+    --warn: #f5a524; --warn-soft: #33270f;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.65 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+h1, h2, h3 { font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif; line-height: 1.25; letter-spacing: -0.01em; }
+a { color: var(--brand); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-weight: 800; font-family: "Plus Jakarta Sans", sans-serif; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 32px; }
+header.top nav a { color: var(--ink-2); text-decoration: none; font-size: 15px; font-weight: 600; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
+.soft { background: var(--brand-soft); color: var(--on-brand-soft); border-color: transparent; }
+.muted { color: var(--ink-2); }
+.small { font-size: 14px; color: var(--ink-3); }
+footer { margin-top: 40px; font-size: 14px; color: var(--ink-3); }
+footer a { color: var(--ink-2); }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sổ Hoa Hồng – Dùng thử</title>
+  <meta name="description" content="App ghi hoa hồng affiliate, tính số thuế sàn đã trừ, số có thể xin hoàn và nhắc hạn nộp. Không cần tài khoản, dữ liệu chỉ nằm trên máy bạn.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero { display: grid; gap: 16px; justify-items: start; }
+    .hero img { width: 88px; height: 88px; border-radius: 22px; box-shadow: 0 8px 24px rgba(15, 107, 79, .25); }
+    .hero h1 { font-size: clamp(32px, 7vw, 44px); margin: 8px 0 0; }
+    .hero p { font-size: 18px; margin: 0; }
+    .benefits { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 12px; }
+    .benefits li { display: flex; gap: 12px; align-items: flex-start; }
+    .benefits span { font-size: 22px; line-height: 1.4; }
+    .stores { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .store h2 { font-size: 20px; margin: 0 0 4px; }
+    .store ol { margin: 8px 0 16px; padding-left: 20px; color: var(--ink-2); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
+      min-height: 52px; padding: 0 20px; border-radius: 999px; font-weight: 700; font-size: 16px;
+      text-decoration: none; background: var(--brand); color: var(--on-brand);
+    }
+    .btn[aria-disabled="true"] { background: var(--surface-2); color: var(--ink-3); pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="icon.png" alt="">Sổ Hoa Hồng</a>
+      <nav><a href="privacy.html">Quyền riêng tư</a></nav>
+    </header>
+
+    <section class="hero">
+      <img src="icon.png" alt="Biểu tượng Sổ Hoa Hồng">
+      <h1>Hoa hồng bị trừ bao nhiêu? Có được hoàn không?</h1>
+      <p class="muted">Ghi hoa hồng affiliate mỗi tháng. App tính giúp số tiền sàn đã khấu trừ, khoảng cách tới ngưỡng 1 tỷ, số có thể xin hoàn và nhắc bạn các hạn cần làm.</p>
+    </section>
+
+    <ul class="benefits">
+      <li><span>💸</span><div><b>Biết ngay tiền thuế bị trừ</b><br><span class="muted" style="font-size:16px">Shopee trừ 5% GTGT + 5% TNCN trên mỗi khoản hoa hồng. App cộng lại cả năm cho bạn.</span></div></li>
+      <li><span>✅</span><div><b>Việc cần làm đúng với trường hợp của bạn</b><br><span class="muted" style="font-size:16px">Nhân viên văn phòng, sinh viên, nội trợ hay làm online toàn thời gian. Mỗi việc đều ghi nguồn.</span></div></li>
+      <li><span>⏰</span><div><b>Nhắc trước hạn</b><br><span class="muted" style="font-size:16px">Ví dụ hạn thông báo doanh thu năm 2026 (mẫu 01/TKN-CNKD) trước 31/01/2027.</span></div></li>
+      <li><span>🔒</span><div><b>Không cần tài khoản</b><br><span class="muted" style="font-size:16px">Số liệu chỉ nằm trên điện thoại của bạn, không gửi đi đâu.</span></div></li>
+    </ul>
+
+    <h2>Tải bản dùng thử</h2>
+    <p class="muted">App đang trong giai đoạn dùng thử miễn phí. Rất mong bạn góp ý để app tốt hơn.</p>
+    <div class="stores">
+      <div class="card store">
+        <h2>Android</h2>
+        <ol>
+          <li>Bấm nút bên dưới, chọn <b>Trở thành người thử nghiệm</b>.</li>
+          <li>Bấm link tải trên Google Play và cài như app bình thường.</li>
+        </ol>
+        <!-- Điền link tham gia thử nghiệm từ Play Console vào href rồi bỏ aria-disabled. -->
+        <a class="btn" href="#" aria-disabled="true" id="android-link">Sắp có trên Google Play</a>
+      </div>
+      <div class="card store">
+        <h2>iPhone</h2>
+        <ol>
+          <li>Cài app <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> của Apple.</li>
+          <li>Bấm nút bên dưới để nhận lời mời và cài app.</li>
+        </ol>
+        <!-- Điền link công khai TestFlight vào href rồi bỏ aria-disabled. -->
+        <a class="btn" href="#" aria-disabled="true" id="ios-link">Sắp có trên TestFlight</a>
+      </div>
+    </div>
+
+    <div class="card soft" style="margin-top:24px">
+      <b>Lưu ý:</b> Thông tin trong app chỉ để tham khảo, có ghi nguồn văn bản. App không thay thế tư vấn của cơ quan thuế hay kế toán.
+    </div>
+
+    <footer>
+      © 2026 Sổ Hoa Hồng · <a href="privacy.html">Chính sách quyền riêng tư</a> ·
+      <a href="https://github.com/haupham0610/sohoahong/issues">Góp ý, báo lỗi</a>
+    </footer>
+  </div>
+</body>
+</html>
