@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Góp ý – Sổ Hoa Hồng</title>
+  <meta name="description" content="Gửi góp ý, báo lỗi và bình chọn tính năng cho bản dùng thử Sổ Hoa Hồng.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h1 { font-size: clamp(28px, 6vw, 36px); margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px;
+      border-radius: 999px; font-weight: 700; text-decoration: none; background: var(--brand); color: var(--on-brand);
+    }
+    .list { display: grid; gap: 10px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .list a { display: flex; gap: 12px; align-items: center; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 600; }
+    .list span { font-size: 22px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="icon.png" alt="">Sổ Hoa Hồng</a>
+      <nav><a href="privacy.html">Quyền riêng tư</a></nav>
+    </header>
+
+    <h1>Góp ý cho bản dùng thử</h1>
+    <p class="muted">Chỗ nào khó hiểu, tính sai, thiếu việc cần làm hay thông tin thuế chưa đúng, bạn báo giúp nhé. Mỗi góp ý đều được đọc và trả lời.</p>
+
+    <h2>Gửi góp ý, báo lỗi</h2>
+    <div class="card">
+      <p style="margin-top:0">Bấm nút dưới đây, viết vài dòng mô tả (nếu được thì kèm loại điện thoại). Cần đăng nhập GitHub (miễn phí).</p>
+      <a class="btn" href="https://github.com/haupham0610/sohoahong/issues/new?labels=gop-y&title=G%C3%B3p%20%C3%BD%3A%20">Gửi góp ý</a>
+      <p class="small" style="margin-bottom:0">Nếu bạn tham gia thử qua Google Play hoặc TestFlight, bạn cũng có thể gửi phản hồi ngay trong trang thử nghiệm của app.</p>
+    </div>
+
+    <h2 id="tinh-nang">Bình chọn tính năng sắp có</h2>
+    <p class="muted">Bản dùng thử miễn phí đầy đủ chức năng hiện có. Các tính năng dưới đây đang được cân nhắc cho bản Pro. Bấm vào tính năng bạn cần nhất.</p>
+    <ul class="list">
+      <li><a href="https://github.com/haupham0610/sohoahong/issues/new?labels=binh-chon&title=B%C3%ACnh%20ch%E1%BB%8Dn%3A%20%C4%90%E1%BB%8Dc%20%E1%BA%A3nh%20b%C3%A1o%20c%C3%A1o%20hoa%20h%E1%BB%93ng"><span>📷</span>Đọc ảnh báo cáo hoa hồng, tự điền số</a></li>
+      <li><a href="https://github.com/haupham0610/sohoahong/issues/new?labels=binh-chon&title=B%C3%ACnh%20ch%E1%BB%8Dn%3A%20Xu%E1%BA%A5t%20PDF%20g%E1%BB%ADi%20k%E1%BA%BF%20to%C3%A1n"><span>📄</span>Xuất PDF gửi kế toán</a></li>
+      <li><a href="https://github.com/haupham0610/sohoahong/issues/new?labels=binh-chon&title=B%C3%ACnh%20ch%E1%BB%8Dn%3A%20Sao%20l%C6%B0u%20v%C3%A0%20chuy%E1%BB%83n%20m%C3%A1y"><span>☁️</span>Sao lưu và chuyển sang máy mới</a></li>
+      <li><a href="https://github.com/haupham0610/sohoahong/issues/new?labels=binh-chon&title=B%C3%ACnh%20ch%E1%BB%8Dn%3A%20Nhi%E1%BB%81u%20n%C4%83m%20v%C3%A0%20bi%E1%BB%83u%20%C4%91%E1%BB%93"><span>📊</span>Nhiều năm, biểu đồ và so sánh</a></li>
+      <li><a href="https://github.com/haupham0610/sohoahong/issues/new?labels=binh-chon&title=B%C3%ACnh%20ch%E1%BB%8Dn%3A%20K%E1%BA%BFt%20n%E1%BB%91i%20k%E1%BA%BF%20to%C3%A1n"><span>🧑‍💼</span>Kết nối kế toán đối tác (trên 1 tỷ)</a></li>
+    </ul>
+
+    <footer>
+      © 2026 Sổ Hoa Hồng · <a href="./">Trang tải dùng thử</a> · <a href="privacy.html">Chính sách quyền riêng tư</a>
+    </footer>
+  </div>
+</body>
+</html>
